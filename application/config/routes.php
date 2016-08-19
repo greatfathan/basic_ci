@@ -41,6 +41,10 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
+/* Alias URI path controller */
+$route['login'] = "login_controller";
+$route['login/(:any)'] = "login_controller/$1";
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
