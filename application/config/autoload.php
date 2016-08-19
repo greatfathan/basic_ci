@@ -52,7 +52,12 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array("form_validation","database");
+/* Menggunakan session maka diwajibkan menggunakan 
+encryption key pada config.php, cari array variabel 
+sebagai berikut -> $config['encryption_key'] = ''; 
+di isi karater apa saja A-Z a-z 1-9 */
+
+$autoload['libraries'] = array("form_validation","database","session");
 
 
 /*
